@@ -18,7 +18,7 @@ for (let i = 0; i < randomObjInt; i++) {
 arr.sort((a, b) => { return a.item - b.item });
 
 for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+    return arr[i];
     arr[i].num++;
     if (arr[i].num != 0) {
         delete arr[i];
