@@ -23,8 +23,10 @@ for (let i = 0; i < 6; i++) {
                 arrObj.item = loot.item[0][0];
                 break;
             case rareChance >= 80:
-            case rareChance < 95:
                 arrObj.item = loot.item[1][0];
+                break;
+            case rareChance < 95:
+                arrObj.item = loot.item[2][0];
                 break;
             default:
                 let rarity = randomInt(74);
